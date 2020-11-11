@@ -1,0 +1,95 @@
+$white_t = rgba(255, 255, 255, 0.65)
+$white_transp = rgba(255, 255, 255, 0.35)
+
+.wrapper
+    padding 0 5u
+    @media screen and (min-width 96u)
+        padding 0 8u
+    @media screen and (min-width 128u)
+        display flex
+        flex-direction row
+        flex-wrap wrap
+        justify-content center
+        padding 8u 8u
+    @media screen and (min-width 160u)
+        padding 15u 15vw
+
+.subtitle
+    font-size 2.5u
+    font-weight 300
+    color white
+    margin-top 4u
+    @media screen and (min-width 160u)
+        font-size 3u
+.text
+    color $white_t
+    line-height 3u
+    font-size 1.7u
+    font-weight 300
+    margin-top 2u
+    @media screen and (min-width 160u)
+        font-size 2.2u
+        line-height 4u
+        padding-right 10u
+        margin-top 4u
+
+.contacts-wrapper
+    &__line
+        flex-direction row
+        margin-top 2u
+        @media screen and (min-width 160u)
+            margin-top 4u
+    &__element
+        flex 1
+        font-weight 400
+        color white
+        font-size 1.7u
+        @media screen and (min-width 160u)
+            font-size 2.2u
+
+.detailed
+    flex 3
+    font-weight 300
+    color $white_t
+
+.social-wrapper
+    flex-direction row
+    margin-top 3u
+    margin-bottom 3u
+    &__element
+        margin-right 2u
+        width: 4u
+        height 4u
+        border 0.125u solid $white_transp
+        border-radius 4u
+        @media screen and (min-width 160u)
+            width 8u
+            height 8u
+            border 0.25u solid $white_transp
+
+    @media screen and (min-width 160u)
+        margin-top 8u
+.snicon
+    margin 7.5px
+    width: 2u
+    height 2u
+    @media screen and (min-width 160u)
+        width 5u
+        height 5u
+        margin 11px
+
+.cprt
+    margin-top 2u
+    margin-bottom 8u
+    color: $white_t
+    font-size 1.2u
+    @media screen and (min-width 128u)
+        margin-top 8u
+    @media screen and (min-width 160u)
+        font-size 2u
+
+.wrapp-chld
+    @media screen and (min-width 128u)
+        display flex
+        flex 1
+        min-width 50%
