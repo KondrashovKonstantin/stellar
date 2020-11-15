@@ -1,54 +1,54 @@
 .first
   border-radius 1u 1u 0 0
-  @media screen and (min-width 96u)
+  +tablet()
     border-radius 1u 0 0 1u
 .last
   border-radius 0 0 1u 1u 
-  @media screen and (min-width 96u)
+  +tablet()
     border-radius 0 1u 1u 0
 
 
 .icon-wht
   width: 10u
   height: 10u
-  @media screen and (min-width 96u)
+  +tablet()
     width 8u
     height 8u
-  @media screen and (min-width 160u)
+  +wide()
     width 12u
     height 12u
 .statistic
   display flex
   margin-top 3u
   width 100%
-  @media screen and (min-width 96u)
+  +tablet()
     flex-direction row
     align-content stretch
-  @media screen and (min-width 160u)
+  +wide()
     margin-top 8u
 
 .stat
   height 23u
   padding 2u
   align-items center
-  @media screen and (min-width 96u)
+  +tablet()
     justify-content center
     width 20%
-  @media screen and (min-width 160u)
+  +wide()
     height 30u  
   &__counter
     padding 1u
     font-size 4u
     color white
     font-weight 200
-    @media screen and (min-width 96u)
+    +tablet()
       font-size 3u
-    @media screen and (min-width 160u)
+    +wide()
       font-size 5u
   &__txt
     color white
     font-weight 300
-    @media screen and (min-width 160u)
+    +wide()
       font-size 3u
     
 

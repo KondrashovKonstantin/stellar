@@ -5,10 +5,10 @@
     align-items center
     border 0.125u solid #dddddd
     border-radius 1u
-    @media screen and (min-width 96u)
+    +tablet()
         max-width 20u
         margin 4u 1u 0 1u
-    @media screen and (min-width 160u)
+    +wide()
         max-width 30u
         height 8u
         margin-top 8u
@@ -16,7 +16,7 @@
         color: #636363
         font-weight 200
         font-size 1.8u
-        @media screen and (min-width 160u)
+        +wide()
             font-size 2.5u
 
 .blue

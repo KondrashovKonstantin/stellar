@@ -8,10 +8,10 @@ $grey = #636363
   width: 16u
   border: 0.125u solid $border 
   border-radius 15u
-  @media screen and (min-width 96u)
+  +tablet()
     width 24u
     height 24u
-  @media screen and (min-width 160u)
+  +wide()
     width 32u
     height 32u
     border-radius 16u
@@ -22,11 +22,11 @@ $grey = #636363
   border 0.125u solid $border 
   border-radius 15u
   margin 3px
-  @media screen and (min-width 96u)
+  +tablet()
     width 22u
     height 22u
     margin 7px
-  @media screen and (min-width 160u)
+  +wide()
     width 28u
     height 28u
     margin 15px 
@@ -37,10 +37,10 @@ $grey = #636363
   height 14u
   width 14u
   margin 2px
-  @media screen and (min-width 96u)
+  +tablet()
     width 21u
     height 21u
-  @media screen and (min-width 160u)
+  +wide()
     width 27u
     height 27u
 
@@ -49,16 +49,16 @@ $grey = #636363
   font-weight 200
   color $grey
   font-size 2u
-  @media screen and (min-width 160u)
+  +wide()
     font-size 3u
     padding-top 5u
 .icon-wrapper
   display flex
   align-items center
   padding 0 2u
-  @media screen and (min-width 96u)
+  +tablet()
     max-width 50%
-  @media screen and (min-width 128u)
+  +desktop()
     max-width 33%
     margin-top 2u
 

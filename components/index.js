@@ -1,3 +1,5 @@
 export { default as TestComponent } from './TestComponent'
 export { default as ButtonG } from './ButtonG'
 export { default as PlainText } from './PlainText'
+export { default as ContentTitle } from './ContentTitle'
+export { default as Section } from './Section'

@@ -1,6 +1,6 @@
 .text-holder
     padding-top 3u
-    @media screen and (min-width 160u)
+    +wide()
         padding-top 6u
 .plaintext
     text-align center
@@ -8,20 +8,20 @@
     line-height 3u
     color: #636363
     font-weight 200
-    @media screen and (min-width 160u)
+    +wide()
         font-size 2.5u
         line-height 5u
 
 .bigtext
     text-align center
     font-weight 100 
-    @media screen and (min-width 160u)
+    +wide()
         font-size 2.8u
         line-height 5.6u
 
 
 .left
     text-align center
-    @media screen and (min-width 128u)
+    +desktop()
         text-align left 
 

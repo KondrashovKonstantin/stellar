@@ -6,7 +6,7 @@ import './index.styl'
 const BASE_URL = 'http://localhost:3010'
 const rocketLogo = BASE_URL + '/public/logo.png'
 
-export default observer(function PHome () {
+export default observer(function Header () {
 
   return pug`  
           View.header

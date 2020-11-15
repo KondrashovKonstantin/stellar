@@ -5,7 +5,7 @@ import './index.styl'
 
 
 
-export default observer(function PHome ({type='grey', text='Learn More', width='100%'}) {
+export default observer(function ButtonG ({type='grey', text='Learn More', width='100%'}) {
 
   return pug`
   if type === 'blue'

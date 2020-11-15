@@ -5,7 +5,7 @@ import './index.styl'
 
 
 
-export default observer(function PHome ({text, size='small', align='center'}) {
+export default observer(function PlainText ({text, size='small', align='center'}) {
 
   return pug`  
     View.text-holder

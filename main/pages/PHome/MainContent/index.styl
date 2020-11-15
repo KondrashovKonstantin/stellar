@@ -1,153 +1,15 @@
 
-
-// main colors
-$blue = rgb(140, 201, 240)
-$dark_blue = rgb(155, 178, 225)
-$violet = rgb(168, 156, 200)
-$light_violet = rgb(199, 156, 200)
-$pink = rgb(239, 168, 176)
-
-// font colors
-$dark = rgb(99, 99, 99)
-$white = rgb(255, 255, 255)
-$white_transp = rgba(255, 255, 255, 0.65)
-$grey = #f7f7f7
-
 .wrapper
-  background-color $white
+  background-color white
   width 128u
   max-width 95%
   margin-top 6u
   border-radius 0.5u
   align-self center
-  @media screen and (min-width 96u)
+  +tablet()
     margin-top 10u
-  @media screen and (min-width 160u)
+  +wide()
     width 80%
     margin-top 15u
-  
-
-.card-header
-  display none
-  flex-direction row
-  background-color $grey
-  height 9u
-  justify-content center
-  align-items center
-  @media screen and (min-width 96u)
-    display flex 
-    border-radius 0.5u 0.5u 0 0
-
-.header-item
-  margin 0 1u
-  color $dark
-  height 4u
-  line-height 4u
-  padding 0 2u
-  font-weight 100
-  font-size 1.8u
-  font-family Ubuntu
-  @media screen and (min-width 160u)
-    font-size 2.4u
-
-.content-wrapper
-  display flex
-  flex-direction column
-  @media screen and (min-width 96u)
-    flex-direction row
-    flex-wrap wrap
-    justify-content center
-
-.holder
-  align-items center
-  padding 5u 3u
-  @media screen and (min-width 96u)
-    padding 5u 6u
-  @media screen and (min-width 160u)
-    padding 10u 12u
-
-.section
-  border-bottom-width 1px
-  border-bottom-color #dddddd
-.image-holder
-  box-sizing content-box
-  height 25u
-  width 25u
-  border 0.125u solid #dddddd 
-  border-radius 25u
-  @media screen and (min-width 96u)
-    height 35u
-    width 35u
-  @media screen and (min-width 160u)
-    height 44u
-    width 44u
-.image
-  height 24u
-  width 24u
-  border-radius 25u
-  margin 3.5px
-  @media screen and (min-width 96u)
-    height 33u
-    width 33u
-    margin 7.5px
-  @media screen and (min-width 160u)
-    height 42u
-    width 42u
-
-.content-title
-  align-items center
-  &_text
-    font-size 2.5u
-    font-weight 200
-    color $dark
-    letter-spacing: -0.125u
-    line-height 5u
-    @media screen and (min-width 96u)
-      font-size 3.5u
-      margin-top 3u
-    @media screen and (min-width 160u)
-      font-size 5u
-  &_line
-    width 10u
-    margin-top 1u
-    height 0.5u
-    @media screen and (min-width 96u)
-      width 12u
-      margin-top 2u
-
-.btns-holder
-  display flex
-  width 100%
-  @media screen and (min-width 96u)
-    flex-direction row
-    justify-content center
-
-.wrap-cont
-  display flex
-  flex-direction column
-  @media screen and (min-width 128u)
-    flex-direction row-reverse
-    
-
-.wrap-child
-  display flex
-  flex-direction column
-  align-items center
-
-.right 
-  display flex
-  @media screen and (min-width 128u)
-    flex 2
 
 
-.left 
-  display flex
-  @media screen and (min-width 128u)
-    flex 3
-    align-items left
-    margin-right 5u
-
-.left-title
-  display flex
-  @media screen and (min-width 128u)
-    align-items left

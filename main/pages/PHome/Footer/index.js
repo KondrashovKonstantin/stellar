@@ -13,7 +13,7 @@ const tel = BASE_URL + 'telegram.png'
 
 const text = `Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.`
 
-export default observer(function PHome () {
+export default observer(function Footer () {
     
   return pug`  
     View.wrapper

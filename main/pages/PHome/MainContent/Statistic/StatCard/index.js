@@ -2,9 +2,9 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { Image, Text, View,  } from 'react-native'
 import './index.styl'
-import { PlainText } from '../../../../../components'
+import { PlainText } from '../../../../../../components'
 
-export default observer(function PHome ({items}) {
+export default observer(function StatCard ({items}) {
   return pug`
   View.statistic
     each val,index in items

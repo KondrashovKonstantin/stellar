@@ -1,0 +1,22 @@
+$dark = rgb(99, 99, 99)
+
+
+.content-title
+  align-items center
+  &_text
+    font-size 2.5u
+    font-weight 200
+    color $dark
+    letter-spacing: -0.125u
+    line-height 5u
+    +tablet()
+      font-size 3.5u
+      margin-top 3u
+    +wide()
+      font-size 5u
+
+
+.left-title
+  display flex
+  +desktop()
+    align-items left

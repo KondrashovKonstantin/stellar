@@ -1,22 +1,26 @@
 .header
   align-items center
   text-align center
-
-
+  padding-top 8u
+  +tablet()
+    padding-top 16u
+  +desktop
+    padding-top 24u
+  +wide()
+    padding-top 32u
 .logo
   background-color white
   display flex
   height: 11u
   width: 11u
-  margin-top: 8u
   border-radius 11u
 
 .textholder
   width: 36u
   margin: 3u 0 0 0
-  @media screen and (min-width 96u)
+  +tablet()
     width 45u
-  @media screen and (min-width 160u)
+  +wide()
     width 70u
 
 .title 
@@ -26,7 +30,7 @@
   color: white
   letter-spacing: -0.125u
   font-weight 200
-  @media screen and (min-width 160u)
+  +wide()
     font-size 8u
     margin-top 5u
 
@@ -36,9 +40,9 @@
   font-size 1.7u
   line-height 3.5u
   font-weight 300
-  @media screen and (min-width 96u)
+  +tablet()
     font-size 2u
-  @media screen and (min-width 160u)
+  +wide()
     font-size 3u
 
 
@@ -49,8 +53,8 @@
   line-height 3.5u
   font-size 1.7u
   font-weight 300
-  @media screen and (min-width 96u)
+  +tablet()
     font-size 2u
-  @media screen and (min-width 160u)
+  +wide()
     font-size 3u
   
