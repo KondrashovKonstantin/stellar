@@ -21,7 +21,8 @@ export default observer(function Cards ({text, icon, title}) {
                 IconContent(text=text2, title = 'Ipsum consequat', icon = java)
                 IconContent(text=text2, title = 'Amet sed feugiat', icon = ver)
                 IconContent(text=text2, title = 'Dolor nullam', icon = bug)
-            ButtonG
+            View.btn-wrapper
+              ButtonG
         `
     }
   return pug`

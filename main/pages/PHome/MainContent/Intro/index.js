@@ -19,8 +19,9 @@ export default observer(function Intro ({text, icon, title}) {
                     Image.image(
                         source={uri: pic})
             View.wrap-child.left
-                ContentTitle(title='Ipsum sed adipiscing', align='left')
-                PlainText(text=text1, align='left')
+              ContentTitle(title='Ipsum sed adipiscing', align='left')
+              PlainText(text=text1, align='left')
+              View.btn-wrapper
                 ButtonG
       `
   } 

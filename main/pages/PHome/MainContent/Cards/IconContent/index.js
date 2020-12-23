@@ -7,7 +7,7 @@ import { PlainText } from '../../../../../../components'
 export default observer(function IconContent ({text, icon, title}) {
 
   return pug`
-  View.icon-wrapper
+  View.root
     View.icon-holder
       View.icon-holder(styleName='inner-holder')
         Image.icon-image(

@@ -16,15 +16,16 @@ const text = `Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequ
 export default observer(function Footer () {
     
   return pug`  
-    View.wrapper
+    View.root
         View.wrapp-chld
             Text.subtitle Aliquam sed mauris
             Text(styleName='text') #{text}
-            ButtonG(type='dark')
+            View.btn-wrapper
+                ButtonG(type='dark')
         View.wrapp-chld
-            Text.subtitle Etiam feugiat
+            Text.subtitle(styleName='second-line') Etiam feugiat
             View.contacts-wrapper
-                View.contacts-wrapper__line
+                View.contacts-wrapper__line(styleName='first')
                     Text.contacts-wrapper__element Address
                     Text.contacts-wrapper__element(styleName='detailed') 1234 Somewhere Road • Nashville, TN 00000 • USA
                 View.contacts-wrapper__line
@@ -34,7 +35,7 @@ export default observer(function Footer () {
                     Text.contacts-wrapper__element Email
                     Text.contacts-wrapper__element(styleName='detailed') information@untitled.tld
             View.social-wrapper
-                TouchableOpacity.social-wrapper__element
+                TouchableOpacity.social-wrapper__element(styleName='first')
                     Image.snicon(source={uri:inst})
                 TouchableOpacity.social-wrapper__element
                     Image.snicon(source={uri:tel})

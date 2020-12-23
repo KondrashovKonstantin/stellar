@@ -1,9 +1,18 @@
 $border = #dddddd
 $grey = #636363
 
+.root
+  margin-top 3u
+  display flex
+  align-items center
+  padding 0 2u
+  +tablet()
+    max-width 50%
+  +desktop()
+    max-width 33%
+    margin-top 2u
 
 .icon-holder
-  margin-top 3u
   height: 16u
   width: 16u
   border: 0.125u solid $border 
@@ -21,7 +30,6 @@ $grey = #636363
   width 15u
   border 0.125u solid $border 
   border-radius 15u
-  margin 3px
   +tablet()
     width 22u
     height 22u
@@ -45,20 +53,12 @@ $grey = #636363
     height 27u
 
 .sub-title
-  padding-top 3u
+  margin-top 3u
   font-weight 200
   color $grey
   font-size 2u
   +wide()
     font-size 3u
     padding-top 5u
-.icon-wrapper
-  display flex
-  align-items center
-  padding 0 2u
-  +tablet()
-    max-width 50%
-  +desktop()
-    max-width 33%
-    margin-top 2u
+
 

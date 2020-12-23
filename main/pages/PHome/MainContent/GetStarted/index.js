@@ -12,7 +12,9 @@ export default observer(function GetStarted ({text, icon, title}) {
         ContentTitle(title='Congue imperdiet')
         PlainText(text=text3, size='big')
         View.btns-holder
+          View.btn-wrapper(styleName='first')
             ButtonG(text='Get Started', type='blue')
+          View.btn-wrapper
             ButtonG
       `
   } 

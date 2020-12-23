@@ -1,6 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
+import { View } from 'react-native'
 import { PlainText, ContentTitle, Section, ButtonG } from '../../../../../components'
 import StatCard from './StatCard'
 
@@ -30,7 +31,8 @@ export default observer(function Statistic () {
             PlainText(text=text3, size='big')
             StatCard(items=items styles={width:'100%'})
             PlainText(text=text4, align='left')
-            ButtonG
+            View.btn-wrapper
+              ButtonG
         `
     }
   return pug`

@@ -1,8 +1,8 @@
 $white_t = rgba(255, 255, 255, 0.65)
 $white_transp = rgba(255, 255, 255, 0.35)
 
-.wrapper
-    padding 0 5u
+.root
+    padding 4u 5u 8u 5u
     +tablet()
         padding 0 8u
     +desktop()
@@ -18,7 +18,6 @@ $white_transp = rgba(255, 255, 255, 0.35)
     font-size 2.5u
     font-weight 300
     color white
-    margin-top 4u
     +wide()
         font-size 3u
 .text
@@ -34,6 +33,9 @@ $white_transp = rgba(255, 255, 255, 0.35)
         margin-top 4u
 
 .contacts-wrapper
+    margin-top 2u
+    +wide()
+        margin-top 4u
     &__line
         flex-direction row
         margin-top 2u
@@ -55,8 +57,6 @@ $white_transp = rgba(255, 255, 255, 0.35)
 .social-wrapper
     flex-direction row
     margin-top 3u
-    margin-bottom 3u
-    margin-left -2u
     &__element
         margin-left 2u
         width: 4u
@@ -80,12 +80,11 @@ $white_transp = rgba(255, 255, 255, 0.35)
         margin 11px
 
 .cprt
-    margin-top 2u
-    margin-bottom 8u
+    margin-top 4u
     color: $white_t
     font-size 1.2u
     +desktop()
-        margin-top 8u
+        margin-top 12u
     +wide()
         font-size 2u
 
@@ -94,3 +93,14 @@ $white_transp = rgba(255, 255, 255, 0.35)
         display flex
         flex 1
         min-width 50%
+
+.first 
+    margin 0
+
+.btn-wrapper
+    margin-top 3u
+
+.second-line
+    margin-top 3u
+    +desktop()
+        margin-top 0
