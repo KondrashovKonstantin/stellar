@@ -2,7 +2,6 @@ $border = #dddddd
 $grey = #636363
 
 .root
-  margin-top 3u
   display flex
   align-items center
   padding 0 2u
@@ -10,20 +9,22 @@ $grey = #636363
     max-width 50%
   +desktop()
     max-width 33%
-    margin-top 2u
 
 .icon-holder
-  height: 16u
-  width: 16u
-  border: 0.125u solid $border 
+  height 16u
+  width 16u
+  border 0.125u solid $border 
   border-radius 15u
+  padding 3px
   +tablet()
     width 24u
     height 24u
+    padding 7px
   +wide()
     width 32u
     height 32u
     border-radius 16u
+    padding 15px
 
 .inner-holder
   height 15u
@@ -33,11 +34,9 @@ $grey = #636363
   +tablet()
     width 22u
     height 22u
-    margin 7px
   +wide()
     width 28u
     height 28u
-    margin 15px 
 
 .icon-image
   position relative
