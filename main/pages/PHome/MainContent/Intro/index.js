@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { Image, Text, View,  } from 'react-native'
 import './index.styl'
-import { PlainText, Section, ContentTitle, ButtonG } from '../../../../../components'
+import { PlainText, Section, ContentTitle, Button } from 'components'
 
 const BASE_URL = 'http://localhost:3010/public/'
 const pic = BASE_URL + 'pic01.jpg'
@@ -11,21 +11,20 @@ const text1 = `Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat
 
 
 export default observer(function Intro ({text, icon, title}) {
-  const IntroContent =  () => {
-      return pug`
-        View.wrap-cont
-            View.wrap-child.right
-                View.image-holder
-                    Image.image(
-                        source={uri: pic})
-            View.wrap-child.left
-              ContentTitle(title='Ipsum sed adipiscing', align='left')
-              PlainText(text=text1, align='left')
-              View.btn-wrapper
-                ButtonG
-      `
-  } 
+  const IntroContent = pug`
+    View.wrapCont
+      View.wrapChild.right
+        View.imageHolder
+          Image.image(
+            source={uri: pic})
+      View.wrapChild.left
+        View.titleWrap
+          ContentTitle(title='Ipsum sed adipiscing', align='left')
+        PlainText(text=text1, align='left')
+        View.btnWrapper
+          Button
+  `
   return pug`
-    Section(Children=IntroContent)                    
+    Section= IntroContent                   
   `
 })

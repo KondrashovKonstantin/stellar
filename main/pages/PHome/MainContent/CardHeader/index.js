@@ -7,14 +7,14 @@ import './index.styl'
 export default observer(function CardHeader () {
 
   return pug`  
-    View.card-header
+    View.cardHeader
         TouchableOpacity
-            Text(styleName='header-item') Introduction
+            Text.headerItem(styleName='selected') Introduction
         TouchableOpacity
-            Text(styleName='header-item') First Section
+            Text.headerItem First Section
         TouchableOpacity
-            Text(styleName='header-item') Second Section
+            Text.headerItem Second Section
         TouchableOpacity
-            Text(styleName='header-item') Get Started
+            Text.headerItem Get Started
     `
 })

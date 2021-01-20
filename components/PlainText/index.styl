@@ -1,12 +1,12 @@
-.text-holder
+.root
     margin-top 3u
     +wide()
         margin-top 6u
 .plaintext
     text-align center
-    font-size 1.7u
+    font-size 13px
     line-height 3u
-    color: #636363
+    color #636363
     font-weight 200
     +wide()
         font-size 2.5u
@@ -16,7 +16,7 @@
     text-align center
     font-weight 100 
     +wide()
-        font-size 2.8u
+        font-size 3u
         line-height 5.6u
 
 
@@ -25,3 +25,7 @@
     +desktop()
         text-align left 
 
+.justify
+    text-align center
+    +tablet()
+        text-align justify 

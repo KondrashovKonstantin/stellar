@@ -9,7 +9,7 @@ import Footer from './Footer'
 export default observer(function PHome () {
 
   return pug`
-        ScrollView.wrapper
+        ScrollView.root
           Header
           MainContent
           Footer

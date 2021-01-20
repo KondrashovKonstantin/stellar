@@ -1,12 +1,11 @@
-$white_t = rgba(255, 255, 255, 0.65)
-$white_transp = rgba(255, 255, 255, 0.35)
+_white_t = rgba(255, 255, 255, 0.65)
+_white_transp = rgba(255, 255, 255, 0.35)
 
 .root
     padding 4u 5u 8u 5u
     +tablet()
-        padding 0 8u
+        padding 4u 8u
     +desktop()
-        display flex
         flex-direction row
         flex-wrap wrap
         justify-content center
@@ -21,9 +20,9 @@ $white_transp = rgba(255, 255, 255, 0.35)
     +wide()
         font-size 3u
 .text
-    color $white_t
+    color _white_t
     line-height 3u
-    font-size 1.7u
+    font-size 13px
     font-weight 300
     margin-top 2u
     +wide()
@@ -32,75 +31,79 @@ $white_transp = rgba(255, 255, 255, 0.35)
         padding-right 10u
         margin-top 4u
 
-.contacts-wrapper
+.contactsWrapper
     margin-top 2u
     +wide()
         margin-top 4u
-    &__line
-        flex-direction row
-        margin-top 2u
-        +wide()
-            margin-top 4u
-    &__element
-        flex 1
-        font-weight 400
-        color white
-        font-size 1.7u
-        +wide()
-            font-size 2.2u
+.contactsWrapperLine
+    flex-direction row
+    margin-top 2u
+    &.first
+        margin 0
+    +wide()
+        margin-top 4u
+.contactsWrapperElement
+    flex 1
+    font-weight 400
+    color white
+    font-size 13px
+    +wide()
+        font-size 2.2u
 
 .detailed
     flex 3
     font-weight 300
-    color $white_t
+    color _white_t
 
-.social-wrapper
+.socialWrapper
     flex-direction row
     margin-top 3u
-    &__element
-        margin-left 2u
-        width: 4u
-        height 4u
-        border 0.125u solid $white_transp
-        border-radius 4u
-        +wide()
-            width 8u
-            height 8u
-            border 0.25u solid $white_transp
-
+.socialWrapperElement
+    margin-left 2u
+    width 4u
+    height 4u
+    border 1px solid _white_transp
+    radius(circle)
+    justify-content center 
+    align-items center
+    +wide()
+        width 8u
+        height 8u
+        border 2px solid _white_transp
     +wide()
         margin-top 8u
+    &.first
+        margin-left 0
 .snicon
-    margin 7.5px
-    width: 2u
+    width 2u
     height 2u
     +wide()
         width 5u
         height 5u
-        margin 11px
 
 .cprt
     margin-top 4u
-    color: $white_t
+    color _white_t
     font-size 1.2u
     +desktop()
         margin-top 12u
     +wide()
         font-size 2u
 
-.wrapp-chld
+.wrappChld
     +desktop()
-        display flex
         flex 1
         min-width 50%
 
-.first 
-    margin 0
 
-.btn-wrapper
+
+.btnWrapper
     margin-top 3u
 
-.second-line
+.secondLine
     margin-top 3u
     +desktop()
         margin-top 0
+
+.link
+    border-bottom 1px solid _white_transp

@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
 import { View } from 'react-native'
-import { PlainText, ContentTitle, Section, ButtonG } from '../../../../../components'
+import { PlainText, ContentTitle, Section, Button } from 'components'
 import StatCard from './StatCard'
 
 const text3 = `Donec imperdiet consequat consequat. Suspendisse feugiat congue \n posuere. Nulla massa urna, fermentum eget quam.`
@@ -25,17 +25,16 @@ const items = [
 
 export default observer(function Statistic () {
 
-    const StatisticContent = () => {
-        return pug`
-            ContentTitle(title='Ipsum consequat')
-            PlainText(text=text3, size='big')
-            StatCard(items=items styles={width:'100%'})
-            PlainText(text=text4, align='left')
-            View.btn-wrapper
-              ButtonG
-        `
-    }
+    const StatisticContent = pug`
+      ContentTitle(title='Ipsum consequat')
+      PlainText(text=text3, size='big')
+      StatCard(items=items styles={width:'100%'})
+      PlainText(text=text4, align='justify')
+      View.btnWrapper
+        Button
+      `
+
   return pug`
-    Section(Children=StatisticContent)
+    Section= StatisticContent
   `
 })

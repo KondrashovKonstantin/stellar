@@ -10,14 +10,13 @@
     padding-top 32u
 .logo
   background-color white
-  display flex
-  height: 11u
-  width: 11u
-  border-radius 11u
+  height 11u
+  width 11u
+  radius(circle)
 
 .textholder
-  width: 36u
-  margin: 3u 0 0 0
+  width 36u
+  margin-top 3u
   +tablet()
     width 45u
   +wide()
@@ -25,10 +24,10 @@
 
 .title 
   font-style normal
-  margin-top: 3u
+  margin-top 3u
   font-size 5u
   color: white
-  letter-spacing: -0.125u
+  letter-spacing -1px
   font-weight 200
   +wide()
     font-size 8u
@@ -36,8 +35,8 @@
 
 .simple
   text-align center
-  color: rgba(255, 255, 255, 0.65)
-  font-size 1.7u
+  color rgba(255, 255, 255, 0.65)
+  font-size 13px
   line-height 3u
   font-weight 300
   +tablet()
@@ -51,7 +50,7 @@
   text-decoration underline 
   text-decoration-color rgba(255, 255, 255, 0.65)
   line-height 3u
-  font-size 1.7u
+  font-size 13px
   font-weight 300
   +tablet()
     font-size 2u

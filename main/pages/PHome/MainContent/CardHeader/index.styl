@@ -1,24 +1,29 @@
-$grey = #f7f7f7
+_grey = #f7f7f7
+_dark = rgb(99, 99, 99)
 
-.card-header
+.cardHeader
   display none
   flex-direction row
-  background-color $grey
+  background-color _grey
   height 9u
   justify-content center
   align-items center
   +tablet()
     display flex 
-    border-radius 0.5u 0.5u 0 0
+    border-radius 4px 4px 0 0
 
-.header-item
+.headerItem
   margin 0 1u
-  color $dark
+  color _dark
   height 4u
   line-height 4u
   padding 0 2u
   font-weight 100
-  font-size 1.8u
-  font-family Ubuntu
+  font-size 2u
+  radius(m)
   +wide()
     font-size 2.4u
+
+
+.selected
+  background-color white

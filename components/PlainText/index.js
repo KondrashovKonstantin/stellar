@@ -8,10 +8,10 @@ import './index.styl'
 export default observer(function PlainText ({text, size='small', align='center'}) {
 
   return pug`  
-    View.text-holder
+    View.root
       if size=='small'
-        Text.plaintext(styleName=align) #{text}
+        Text.plaintext(styleName=align)=text
       else
-        Text.bigtext(styleName='plaintext #{align}') #{text}
+        Text.bigtext(styleName='plaintext #{align}')=text
   `
 })

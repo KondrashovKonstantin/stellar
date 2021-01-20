@@ -1,8 +1,7 @@
-$border = #dddddd
-$grey = #636363
+_border = #dddddd
+_grey = #636363
 
 .root
-  display flex
   align-items center
   padding 0 2u
   +tablet()
@@ -10,27 +9,26 @@ $grey = #636363
   +desktop()
     max-width 33%
 
-.icon-holder
+.iconHolder
   height 16u
   width 16u
-  border 0.125u solid $border 
-  border-radius 15u
-  padding 3px
+  border 1px solid _border 
+  radius(circle)
+  align-items center
+  justify-content center
   +tablet()
     width 24u
     height 24u
-    padding 7px
   +wide()
     width 32u
     height 32u
-    border-radius 16u
-    padding 15px
+    radius(circle)
 
-.inner-holder
+.innerHolder
   height 15u
   width 15u
-  border 0.125u solid $border 
-  border-radius 15u
+  border 1px solid _border 
+  radius(circle)
   +tablet()
     width 22u
     height 22u
@@ -38,23 +36,22 @@ $grey = #636363
     width 28u
     height 28u
 
-.icon-image
-  position relative
+.iconImage
   overflow hidden
-  height 14u
-  width 14u
+  height 12u
+  width 12u
   margin 2px
   +tablet()
-    width 21u
-    height 21u
+    width 18u
+    height 18u
   +wide()
-    width 27u
-    height 27u
+    width 25u
+    height 25u
 
-.sub-title
+.subTitle
   margin-top 3u
   font-weight 200
-  color $grey
+  color _grey
   font-size 2u
   +wide()
     font-size 3u

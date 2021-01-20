@@ -11,11 +11,11 @@ import GetStarted from './GetStarted'
 export default observer(function MainContent () {
 
   return pug`
-        View.wrapper
-          CardHeader
-          Intro
-          Cards
-          Statistic
-          GetStarted
-                `
+    View.root
+      CardHeader
+      Intro
+      Cards
+      Statistic
+      GetStarted
+  `
 })

@@ -1,9 +1,9 @@
-.image-holder
+.imageHolder
   box-sizing content-box
   height 25u
   width 25u
-  border 0.125u solid #dddddd 
-  border-radius 25u
+  border 1px solid #dddddd 
+  radius(circle)
   +tablet()
     height 35u
     width 35u
@@ -13,7 +13,7 @@
 .image
   height 24u
   width 24u
-  border-radius 25u
+  radius(circle)
   margin 3.5px
   +tablet()
     height 33u
@@ -23,32 +23,31 @@
     height 42u
     width 42u
 
-.wrap-cont
-  display flex
+.wrapCont
   flex-direction column
   +desktop()
     flex-direction row-reverse
     
 
-.wrap-child
-  display flex
+.wrapChild
   flex-direction column
   align-items center
 
 .right 
-  display flex
   +desktop()
     flex 2
 
 
 .left 
-  display flex
   +desktop()
     flex 3
     align-items flex-start
     margin-right 5u
 
-.btn-wrapper
+.btnWrapper
   margin-top 2u
   +wide()
     margin-top 6u
+
+.titleWrap
+  margin-top 2u
