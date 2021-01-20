@@ -21,7 +21,7 @@ export default observer(function Footer () {
             Text(styleName='text') #{text}
             View.btnWrapper
                 Button(type='dark')
-        View.wrappChld
+        View.wrappChld(styleName='second')
             Text.subtitle(styleName='secondLine') Etiam feugiat
             View.contactsWrapper
                 for item, index in data

@@ -4,14 +4,14 @@ _white_transp = rgba(255, 255, 255, 0.35)
 .root
     padding 4u 5u 8u 5u
     +tablet()
-        padding 4u 8u
+        padding 8u 8u 12u 8u
     +desktop()
         flex-direction row
         flex-wrap wrap
         justify-content center
-        padding 8u 8u
+        padding 8u 12u
     +wide()
-        padding 15u 15vw
+        padding 15u 15u
 
 .subtitle
     font-size 2.5u
@@ -22,7 +22,7 @@ _white_transp = rgba(255, 255, 255, 0.35)
 .text
     color _white_t
     line-height 3u
-    font-size 13px
+    font-size 14px
     font-weight 300
     margin-top 2u
     +wide()
@@ -35,18 +35,22 @@ _white_transp = rgba(255, 255, 255, 0.35)
     margin-top 2u
     +wide()
         margin-top 4u
+        
 .contactsWrapperLine
     flex-direction row
     margin-top 2u
-    &.first
-        margin 0
     +wide()
         margin-top 4u
+
+.contactsWrapperLine
+    &.first
+        margin 0
+
 .contactsWrapperElement
     flex 1
     font-weight 400
     color white
-    font-size 13px
+    font-size 14px
     +wide()
         font-size 2.2u
 
@@ -70,8 +74,9 @@ _white_transp = rgba(255, 255, 255, 0.35)
         width 8u
         height 8u
         border 2px solid _white_transp
-    +wide()
         margin-top 8u
+
+.socialWrapperElement
     &.first
         margin-left 0
 .snicon
@@ -93,7 +98,8 @@ _white_transp = rgba(255, 255, 255, 0.35)
 .wrappChld
     +desktop()
         flex 1
-        min-width 50%
+        max-width 50%
+        min-width 40%
 
 
 
@@ -107,3 +113,7 @@ _white_transp = rgba(255, 255, 255, 0.35)
 
 .link
     border-bottom 1px solid _white_transp
+
+.second
+    +desktop()
+        margin-left 2u
