@@ -11,20 +11,17 @@ const text1 = `Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat
 
 
 export default observer(function Intro ({text, icon, title}) {
-  const IntroContent = pug`
-    View.wrapCont
-      View.wrapChild.right
-        View.imageHolder
-          Image.image(
-            source={uri: pic})
-      View.wrapChild.left
-        View.titleWrap
-          ContentTitle(title='Ipsum sed adipiscing', align='left')
-        PlainText(text=text1, align='left')
-        View.btnWrapper
-          Button
-  `
   return pug`
-    Section= IntroContent                   
+    Section
+      View.wrapCont
+        View.wrapChild.right
+          View.imageHolder
+            Image.image(source={uri: pic})
+        View.wrapChild.left
+          View.titleWrap
+            ContentTitle(title='Ipsum sed adipiscing', align='left')
+          PlainText(text=text1, align='left')
+          View.btnWrapper
+            Button
   `
 })

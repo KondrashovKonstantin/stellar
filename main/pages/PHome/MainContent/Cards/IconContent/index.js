@@ -9,9 +9,8 @@ export default observer(function IconContent ({text, icon, title}) {
   return pug`
   View.root
     View.iconHolder
-      View.iconHolder(styleName='innerHolder')
-        Image.iconImage(
-          source={uri: icon})
+      Image.iconImage(
+        source={uri: icon})
     Text.subTitle=title
     PlainText(text=text)
                            

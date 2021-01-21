@@ -18,19 +18,18 @@ export default observer(function Footer () {
     View.root
         View.wrappChld
             Text.subtitle Aliquam sed mauris
-            Text(styleName='text') #{text}
+            Text.text= text
             View.btnWrapper
                 Button(type='dark')
         View.wrappChld(styleName='second')
             Text.subtitle(styleName='secondLine') Etiam feugiat
             View.contactsWrapper
-                for item, index in data
+                each item, index in data
                     View.contactsWrapperLine(styleName={first:!index})
                         Text.contactsWrapperElement= item.key
-                        Text.contactsWrapperElement(styleName='detailed' 
-                            style=item.key==='Email'?{textDecorationLine:'underline'}:null)= item.value
+                        Text.contactsWrapperElement(styleName=['detailed', {email:item.key==='Email'}])= item.value
             View.socialWrapper
-                for item, index in socials
+                each item, index in socials
                     TouchableOpacity.socialWrapperElement(styleName={first:!index})
                         Image.snicon(source={uri:BASE_URL+item})
         Text.cprt © Untitled. Design: 

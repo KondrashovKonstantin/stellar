@@ -12,15 +12,13 @@ const text2 = `Sed lorem amet ipsum dolor et amet nullam consequat a feugiat con
 const imgs = ['java.png', 'version.png', 'debug.png']
 
 export default observer(function Cards ({text, icon, title}) {
-    const Card = pug`
-        ContentTitle(title='Magna veroeros')  
-        View.contentWrapper
-          for item in imgs
-            IconContent(text=text2, title = 'Ipsum consequat', icon =BASE_URL + item)
-        View.btnWrapper
-          Button
-      `
   return pug`
-    Section=Card
+    Section
+      ContentTitle(title='Magna veroeros')  
+      View.contentWrapper
+        each item in imgs
+          IconContent(text=text2, title = 'Ipsum consequat', icon =BASE_URL + item)
+      View.btnWrapper
+        Button
   `
 })

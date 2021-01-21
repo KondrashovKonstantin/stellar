@@ -6,15 +6,17 @@ import './index.styl'
 
 export default observer(function CardHeader () {
 
+    const options = [
+        {selected: true, value: 'Introduction'},
+        {value:'First Section'},
+        {value:'Second Section'},
+        {value:'Get Started'}
+    ]
+
   return pug`  
     View.cardHeader
-        TouchableOpacity
-            Text.headerItem(styleName='selected') Introduction
-        TouchableOpacity
-            Text.headerItem First Section
-        TouchableOpacity
-            Text.headerItem Second Section
-        TouchableOpacity
-            Text.headerItem Get Started
+        each item in options
+            TouchableOpacity
+                Text.headerItem(styleName={selected:item.selected})= item.value
     `
 })

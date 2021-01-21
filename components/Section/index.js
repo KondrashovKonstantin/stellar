@@ -5,9 +5,10 @@ import './index.styl'
 
 
 
-export default observer(function Section ({children}) {
-  console.log(children)
+export default observer(function Section ({children, isLast}) {
+  console.log(isLast)
+
   return pug`  
-    View.root.section= children
+    View.root(styleName={last:isLast})= children
   `
 })

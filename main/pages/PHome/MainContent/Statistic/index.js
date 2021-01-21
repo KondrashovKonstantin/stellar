@@ -24,17 +24,13 @@ const items = [
   ]
 
 export default observer(function Statistic () {
-
-    const StatisticContent = pug`
+  return pug`
+    Section
       ContentTitle(title='Ipsum consequat')
       PlainText(text=text3, size='big')
       StatCard(items=items styles={width:'100%'})
       PlainText(text=text4, align='justify')
       View.btnWrapper
         Button
-      `
-
-  return pug`
-    Section= StatisticContent
   `
 })

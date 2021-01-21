@@ -9,9 +9,10 @@ export default observer(function StatCard ({items}) {
     View.statistic
       each val,index in items
         View.stat(
-        key=val.uri,
-        style={backgroundColor: val.color}, 
-        styleName={first:!index, last:index === items.length-1})
+          key=val.uri
+          style={backgroundColor: val.color}
+          styleName={first:!index, last:index === items.length-1}
+        )
           Image.iconWht(source = {uri: val.uri})
           Text.statCounter= val.counter
           Text.statTxt= val.text

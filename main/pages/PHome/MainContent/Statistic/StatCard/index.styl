@@ -1,13 +1,3 @@
-.first
-  border-radius 1u 1u 0 0
-  +tablet()
-    border-radius 1u 0 0 1u
-.last
-  border-radius 0 0 1u 1u 
-  +tablet()
-    border-radius 0 1u 1u 0
-
-
 .iconWht
   width: 10u
   height: 10u
@@ -34,6 +24,17 @@
     width 20%
   +wide()
     padding 5u
+
+.stat
+  &.first
+    border-radius 1u 1u 0 0
+    +tablet()
+      border-radius 1u 0 0 1u
+  &.last
+    border-radius 0 0 1u 1u 
+    +tablet()
+      border-radius 0 1u 1u 0
+
 
 .statCounter
   margin-top 1u
