@@ -1,14 +1,11 @@
 import React from 'react'
+import { Text, View } from 'react-native'
 import { observer } from 'startupjs'
-import {Text, View,  } from 'react-native'
 import './index.styl'
 
-
-
-export default observer(function PlainText ({text, size='small', align='center'}) {
-
+export default observer(function PlainText ({ text, size = 'small', align = 'center' }) {
   return pug`  
     View.root
-        Text.plaintext(styleName=[align, size])=text
+      Text.plaintext(styleName=[align, size])=text
   `
 })
