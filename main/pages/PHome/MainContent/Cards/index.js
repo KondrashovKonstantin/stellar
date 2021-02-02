@@ -16,8 +16,8 @@ export default observer(function Cards ({ text, icon, title }) {
     Section
       ContentTitle(title='Magna veroeros')  
       View.contentWrapper
-        each item in imgs
-          IconContent(text=text2, title = 'Ipsum consequat', icon =BASE_URL + item)
+        each item, i in imgs
+          IconContent(text=text2, title = 'Ipsum consequat', icon =BASE_URL + item key=i)
       View.btnWrapper
         Button
   `

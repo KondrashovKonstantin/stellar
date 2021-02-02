@@ -14,7 +14,7 @@ export default observer(function CardHeader () {
   return pug`  
     View.cardHeader
       each item in options
-        TouchableOpacity
+        TouchableOpacity(key=item.value)
           Text.headerItem(styleName={selected:item.selected})= item.value
     `
 })

@@ -25,12 +25,12 @@ export default observer(function Footer () {
           Text.subtitle(styleName='secondLine') Etiam feugiat
           View.contactsWrapper
             each item, index in data
-              View.contactsWrapperLine(styleName={first:!index})
+              View.contactsWrapperLine(styleName={first:!index} key=item.key)
                 Text.contactsWrapperElement= item.key
                 Text.contactsWrapperElement(styleName=['detailed', {email:item.key==='Email'}])= item.value
             View.socialWrapper
               each item, index in socials
-                TouchableOpacity.socialWrapperElement(styleName={first:!index})
+                TouchableOpacity.socialWrapperElement(styleName={first:!index} key=index)
                   Image.snicon(source={uri:BASE_URL+item})
         Text.cprt © Untitled. Design: 
           Text.cprt.link HTML5 UP. 
