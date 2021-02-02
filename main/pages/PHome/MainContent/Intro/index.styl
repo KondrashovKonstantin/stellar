@@ -1,0 +1,52 @@
+.imageHolder
+  box-sizing content-box
+  height 25u
+  width 25u
+  border 1px solid #dddddd 
+  radius(circle)
+  +tablet()
+    height 35u
+    width 35u
+  +wide()
+    height 44u
+    width 44u
+    
+.image
+  height 24u
+  width 24u
+  radius(circle)
+  margin 3.5px
+  +tablet()
+    height 33u
+    width 33u
+    margin 7.5px
+  +wide()
+    height 42u
+    width 42u
+
+.wrapCont
+  flex-direction column
+  +desktop()
+    flex-direction row-reverse
+    
+.wrapChild
+  flex-direction column
+  align-items center
+
+.right 
+  +desktop()
+    flex 2
+
+.left 
+  +desktop()
+    flex 3
+    align-items flex-start
+    margin-right 5u
+
+.btnWrapper
+  margin-top 2u
+  +wide()
+    margin-top 6u
+
+.titleWrap
+  margin-top 2u

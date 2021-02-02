@@ -1,0 +1,28 @@
+_grey = #f7f7f7
+_dark = rgb(99, 99, 99)
+
+.cardHeader
+  display none
+  flex-direction row
+  background-color _grey
+  height 9u
+  justify-content center
+  align-items center
+  +tablet()
+    display flex 
+    border-radius 4px 4px 0 0
+
+.headerItem
+  margin 0 1u
+  color _dark
+  height 4u
+  line-height 4u
+  padding 0 2u
+  font-weight 100
+  font-size 2u
+  radius(m)
+  +wide()
+    font-size 18px
+
+.selected
+  background-color white

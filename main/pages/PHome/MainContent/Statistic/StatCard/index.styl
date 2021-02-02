@@ -1,0 +1,56 @@
+.iconWht
+  width 10u
+  height 10u
+  +tablet()
+    width 8u
+    height 8u
+  +wide()
+    width 12u
+    height 12u
+.statistic
+  margin-top 3u
+  width 100%
+  +tablet()
+    flex-direction row
+    align-content stretch
+  +wide()
+    margin-top 8u
+
+.stat
+  padding 3u
+  align-items center
+  +tablet()
+    justify-content center
+    width 20%
+  +wide()
+    padding 5u
+
+.stat
+  &.first
+    border-radius 1u 1u 0 0
+    +tablet()
+      border-radius 1u 0 0 1u
+  &.last
+    border-radius 0 0 1u 1u 
+    +tablet()
+      border-radius 0 1u 1u 0
+
+
+.statCounter
+  margin-top 1u
+  font-size 4u
+  color white
+  font-weight 200
+  +tablet()
+    font-size 3u
+  +wide()
+    font-size 5u
+
+.statTxt
+  color white
+  font-weight 300
+  +wide()
+    font-size 3u
+    
+
+  
