@@ -1,0 +1,50 @@
+_border = #dddddd
+_grey = #636363
+
+.root
+  align-items center
+  padding 0 2u
+  +tablet()
+    max-width 50%
+  +desktop()
+    max-width 33%
+
+.iconHolder
+  height 16u
+  width 16u
+  border 1px solid _border 
+  radius(circle)
+  align-items center
+  justify-content center
+  +tablet()
+    width 24u
+    height 24u
+  +wide()
+    width 32u
+    height 32u
+    radius(circle)
+
+.iconImage
+  overflow hidden
+  height 14u
+  width 14u
+  margin 2px
+  border 1px solid _border 
+  radius(circle)
+  +tablet()
+    width 22u
+    height 22u
+  +wide()
+    width 30u
+    height 30u
+
+.subTitle
+  margin-top 3u
+  font-weight 200
+  color _grey
+  font-size 2u
+  +wide()
+    font-size 3u
+    padding-top 5u
+
+
